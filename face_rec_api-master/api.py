@@ -162,7 +162,7 @@ def serve_pil_image(pil_img):
 
 # Run Server
 if __name__ == "__main__":
-    #from werkzeug.contrib.profiler import ProfilerMiddleware
-    #app.config['PROFILE'] = True # turn on/off profiler
-    #app.wsgi_app = ProfilerMiddleware(app.wsgi_app, profile_dir='./profile')
+    from werkzeug.contrib.profiler import ProfilerMiddleware
+    app.config['PROFILE'] = True # turn on/off profiler
+    app.wsgi_app = ProfilerMiddleware(app.wsgi_app, profile_dir='./profile')
     app.run(debug=True)
