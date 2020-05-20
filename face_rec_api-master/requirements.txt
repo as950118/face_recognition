@@ -1,7 +1,7 @@
 face-recognition==1.2.3
 face-recognition-models==0.3.0
 Flask==1.1.1
-httplib2==0.9.2
+httplib2==0.18.0
 MarkupSafe==1.0
 netifaces==0.10.4
 numpy==1.17.2
